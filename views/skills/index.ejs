@@ -1,0 +1,11 @@
+<h1>Skills</h1>
+<a href="/skills">Skills List</a>
+<ul>
+  <% skills.forEach(skill => { %>
+    <li>
+      <%= skill.text %> 
+      - 
+      <%= skill.have ? 'yes' : 'no' %>
+    </li>
+  <% }) %>
+</ul>
